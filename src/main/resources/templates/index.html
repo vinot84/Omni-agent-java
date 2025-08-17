@@ -9,33 +9,142 @@
     <link rel="stylesheet" href="/webjars/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/static/style.css">
     <style>
-        body { background: #fff; color: #1a2a3a; font-family: 'Inter', Arial, sans-serif; }
-        .hero { background: linear-gradient(90deg, #0f4c81 60%, #1de9b6 100%); color: #fff; padding: 80px 0 60px; border-radius: 0 0 40px 40px; box-shadow: 0 8px 32px rgba(15,76,129,0.08); }
-        .btn-teal { background: #1de9b6; color: #fff; border-radius: 30px; font-weight: 600; }
-        .btn-outline-darkblue { border: 2px solid #0f4c81; color: #0f4c81; border-radius: 30px; font-weight: 600; }
-        .card { border-radius: 24px; box-shadow: 0 4px 24px rgba(15,76,129,0.07); transition: transform 0.2s; }
-        .card:hover { transform: translateY(-6px) scale(1.02); }
-        .icon { font-size: 2.5rem; color: #0f4c81; margin-bottom: 12px; }
-        .section-title { font-size: 2.2rem; font-weight: 700; color: #0f4c81; margin-bottom: 32px; }
-        .footer { background: #0f4c81; color: #fff; padding: 40px 0 20px; border-radius: 40px 40px 0 0; }
-        .footer a { color: #1de9b6; margin-right: 16px; }
-        .fade-in { animation: fadeIn 1.2s ease; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: none; } }
+        body {
+            background: #f6f8fa;
+            color: #222;
+            font-family: 'Inter', Arial, sans-serif;
+        }
+        .navbar {
+            background: #232f3e !important;
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(35,47,62,0.08);
+        }
+        .navbar-brand {
+            color: #00bfff !important;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+        .hero {
+            background: linear-gradient(180deg, #e3f2fd 60%, #f6f8fa 100%);
+            color: #232f3e;
+            padding: 80px 0 60px;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0 8px 32px rgba(35,47,62,0.08);
+        }
+        .btn-blue {
+            background: linear-gradient(90deg, #00bfff 60%, #232f3e 100%);
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 700;
+            box-shadow: 0 2px 12px rgba(0,191,255,0.12);
+            border: none;
+            transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+        }
+        .btn-blue:hover, .btn-blue:focus {
+            background: linear-gradient(90deg, #232f3e 60%, #00bfff 100%);
+            color: #fff;
+            box-shadow: 0 6px 24px rgba(0,191,255,0.18);
+            transform: translateY(-2px) scale(1.04);
+        }
+        .btn-outline-blue {
+            border: 2px solid #00bfff;
+            color: #00bfff;
+            border-radius: 30px;
+            font-weight: 700;
+            background: #fff;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+        }
+        .btn-outline-blue:hover, .btn-outline-blue:focus {
+            background: #00bfff;
+            color: #fff;
+            border-color: #232f3e;
+            box-shadow: 0 6px 24px rgba(0,191,255,0.18);
+            transform: translateY(-2px) scale(1.04);
+        }
+        .card {
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(35,47,62,0.07);
+            background: #fff;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+        .card:hover {
+            box-shadow: 0 8px 32px rgba(0,191,255,0.12);
+            transform: translateY(-4px) scale(1.01);
+        }
+        .icon {
+            font-size: 2.5rem;
+            color: #00bfff;
+            margin-bottom: 12px;
+        }
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #232f3e;
+            margin-bottom: 32px;
+            letter-spacing: 0.5px;
+        }
+        .footer {
+            background: #232f3e;
+            color: #fff;
+            padding: 40px 0 20px;
+            border-radius: 40px 40px 0 0;
+            box-shadow: 0 -2px 16px rgba(35,47,62,0.08);
+        }
+        .footer a {
+            color: #00bfff;
+            margin-right: 16px;
+            transition: color 0.2s;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+        .fade-in {
+            animation: fadeIn 1.2s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: none; }
+        }
+        @media (max-width: 768px) {
+            .hero { padding: 48px 0 32px; border-radius: 0 0 24px 24px; }
+            .section-title { font-size: 1.5rem; }
+            .icon { font-size: 2rem; }
+            .card { border-radius: 12px; }
+        }
     </style>
 </head>
 <body>
+    <!-- Header Bar -->
+    <header class="navbar navbar-expand-lg" style="background: #0f4c81; color: #fff;">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="/" style="font-size: 2rem; letter-spacing: 1px;">OmniAgent</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="/demo">Demo</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/early-access">Early Access</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/billing">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <!-- Flash Message -->
     <div class="container mt-4">
         <div th:if="${message}" class="alert alert-success text-center" role="alert" th:text="${message}"></div>
     </div>
     <!-- Hero Section -->
-    <section class="hero text-center fade-in">
+    <section class="hero text-center fade-in" style="background: linear-gradient(180deg, #87ceeb 80%, #fff 100%);">
         <div class="container">
             <h1 class="display-4 fw-bold mb-3">Deploy AI coworkers in every department.</h1>
             <p class="lead mb-4">OmniAgent automates the repetitive so your people can focus on what truly matters.</p>
             <div class="d-flex justify-content-center gap-3 mb-4">
-                <a href="/early-access" class="btn btn-teal btn-lg px-5">Get Early Access</a>
-                <a href="#demo" class="btn btn-outline-darkblue btn-lg px-5">Watch Demo</a>
+                <a href="/early-access" class="btn btn-blue btn-lg px-5">Get Early Access</a>
+                <a href="/demo" class="btn btn-outline-blue btn-lg px-5">Watch Demo</a>
             </div>
         </div>
     </section>
@@ -71,9 +180,9 @@
     </section>
 
     <!-- AI Agent Types -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-white">
         <div class="container">
-            <h2 class="section-title text-center">AI Agent Types</h2>
+            <h2 class="section-title text-center text-blue">AI Agent Types</h2>
             <div class="row text-center">
                 <div class="col-6 col-md-3 mb-4">
                     <div class="card p-3 h-100">
@@ -140,9 +249,9 @@
     </section>
 
     <!-- Market Opportunity -->
-    <section class="py-5">
+    <section class="py-5 bg-white">
         <div class="container">
-            <h2 class="section-title text-center">Market Opportunity</h2>
+            <h2 class="section-title text-center text-blue">Market Opportunity</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card p-4 text-center">
@@ -155,9 +264,9 @@
     </section>
 
     <!-- Customer Testimonials -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-white">
         <div class="container">
-            <h2 class="section-title text-center">Customer Testimonials</h2>
+            <h2 class="section-title text-center text-blue">Customer Testimonials</h2>
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-4">
                     <div class="card p-4 h-100">
@@ -185,9 +294,9 @@
     </section>
 
     <!-- Pricing Plans -->
-    <section class="py-5">
+    <section class="py-5 bg-white">
         <div class="container">
-            <h2 class="section-title text-center">Pricing Plans</h2>
+            <h2 class="section-title text-center text-blue">Pricing Plans</h2>
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-4">
                     <div class="card p-4 text-center h-100">
@@ -197,7 +306,7 @@
                             <li>Up to 3 agents</li>
                             <li>Email support</li>
                         </ul>
-                        <a href="/billing" class="btn btn-teal px-4">Get Started</a>
+                        <a href="/billing" class="btn btn-blue px-4">Get Started</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -209,7 +318,7 @@
                             <li>Priority support</li>
                             <li>Advanced analytics</li>
                         </ul>
-                        <a href="#early-access" class="btn btn-teal px-4">Get Started</a>
+                        <a href="#early-access" class="btn btn-blue px-4">Get Started</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -221,7 +330,7 @@
                             <li>Dedicated manager</li>
                             <li>Custom integrations</li>
                         </ul>
-                        <a href="#early-access" class="btn btn-teal px-4">Contact Sales</a>
+                        <a href="#early-access" class="btn btn-blue px-4">Contact Sales</a>
                     </div>
                 </div>
             </div>

@@ -9,4 +9,9 @@ public class HomeController {
     public String home(org.springframework.ui.Model model) {
         return "index";
     }
+
+    @GetMapping("/demo")
+    public String demo() {
+        return "demo";
+    }
 }

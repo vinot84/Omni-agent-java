@@ -3,31 +3,36 @@
 /* Enterprise White & Blue Theme */
 .text-blue { color: #0f4c81 !important; }
 .bg-white { background: #fff !important; }
+
 .btn-blue {
-    background: #0f4c81;
+    background: linear-gradient(90deg, #00bfff 60%, #0f4c81 100%);
     color: #fff;
     border-radius: 30px;
-    font-weight: 600;
-    box-shadow: 0 2px 8px rgba(15,76,129,0.08);
-    transition: background 0.2s, box-shadow 0.2s;
+    font-weight: 700;
+    box-shadow: 0 2px 12px rgba(0,191,255,0.12);
+    border: none;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 .btn-blue:hover, .btn-blue:focus {
-    background: #1565c0;
+    background: linear-gradient(90deg, #0f4c81 60%, #00bfff 100%);
     color: #fff;
-    box-shadow: 0 4px 16px rgba(15,76,129,0.15);
+    box-shadow: 0 6px 24px rgba(0,191,255,0.18);
+    transform: translateY(-2px) scale(1.04);
 }
 .btn-outline-blue {
-    border: 2px solid #0f4c81;
-    color: #0f4c81;
+    border: 2px solid #00bfff;
+    color: #00bfff;
     border-radius: 30px;
-    font-weight: 600;
+    font-weight: 700;
     background: #fff;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 .btn-outline-blue:hover, .btn-outline-blue:focus {
-    background: #0f4c81;
+    background: #00bfff;
     color: #fff;
     border-color: #0f4c81;
+    box-shadow: 0 6px 24px rgba(0,191,255,0.18);
+    transform: translateY(-2px) scale(1.04);
 }
 .card {
     border-radius: 24px;
