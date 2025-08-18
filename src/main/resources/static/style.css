@@ -1,12 +1,88 @@
-/* Custom styles for OmniAgent landing page */
+
+/* Enterprise SaaS style for OmniAgent landing page */
 .text-teal { color: #1de9b6 !important; }
 .border-teal { border-color: #1de9b6 !important; }
-.btn-teal:hover, .btn-teal:focus { background: #0f4c81; color: #fff; }
-.btn-outline-darkblue:hover, .btn-outline-darkblue:focus { background: #0f4c81; color: #fff; border-color: #0f4c81; }
-.card { transition: box-shadow 0.2s; }
-.card:hover { box-shadow: 0 8px 32px rgba(15,76,129,0.12); }
+.btn-teal {
+    background: linear-gradient(90deg, #1de9b6 60%, #0f4c81 100%);
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(15,76,129,0.08);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-teal:hover, .btn-teal:focus {
+    background: #0f4c81;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(15,76,129,0.15);
+}
+.btn-outline-darkblue {
+    border: 2px solid #0f4c81;
+    color: #0f4c81;
+    border-radius: 30px;
+    font-weight: 600;
+    background: #fff;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-outline-darkblue:hover, .btn-outline-darkblue:focus {
+    background: #0f4c81;
+    color: #fff;
+    border-color: #0f4c81;
+}
+.card {
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(15,76,129,0.07);
+    transition: box-shadow 0.2s, transform 0.2s;
+    background: #fff;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: 0 8px 32px rgba(15,76,129,0.12);
+    transform: translateY(-4px) scale(1.01);
+}
+.icon {
+    font-size: 2.5rem;
+    color: #0f4c81;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #1de9b6 0%, #0f4c81 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0f4c81;
+    margin-bottom: 32px;
+    letter-spacing: 0.5px;
+}
+.footer {
+    background: #0f4c81;
+    color: #fff;
+    padding: 40px 0 20px;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 -2px 16px rgba(15,76,129,0.08);
+}
+.footer a {
+    color: #1de9b6;
+    margin-right: 16px;
+    transition: color 0.2s;
+}
+.footer a:hover {
+    color: #fff;
+}
+.fade-in {
+    animation: fadeIn 1.2s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: none; }
+}
 @media (max-width: 768px) {
     .hero { padding: 48px 0 32px; border-radius: 0 0 24px 24px; }
     .section-title { font-size: 1.5rem; }
     .icon { font-size: 2rem; }
+    .card { border-radius: 16px; }
 }
