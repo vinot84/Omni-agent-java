@@ -1,2 +1,4 @@
+com/omniagent/controller/EarlyAccessController.class
 com/omniagent/OmniAgentLandingApplication.class
 com/omniagent/controller/HomeController.class
+com/omniagent/controller/BillingController.class

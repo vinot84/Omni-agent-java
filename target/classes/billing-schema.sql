@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS billing_info (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    card_number VARCHAR(20) NOT NULL,
+    expiry VARCHAR(5) NOT NULL,
+    cvv VARCHAR(4) NOT NULL,
+    address VARCHAR(200) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    state VARCHAR(100) NOT NULL,
+    zip VARCHAR(20) NOT NULL
+);

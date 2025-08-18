@@ -24,13 +24,17 @@
     </style>
 </head>
 <body>
+    <!-- Flash Message -->
+    <div class="container mt-4">
+        <div th:if="${message}" class="alert alert-success text-center" role="alert" th:text="${message}"></div>
+    </div>
     <!-- Hero Section -->
     <section class="hero text-center fade-in">
         <div class="container">
             <h1 class="display-4 fw-bold mb-3">Deploy AI coworkers in every department.</h1>
             <p class="lead mb-4">OmniAgent automates the repetitive so your people can focus on what truly matters.</p>
             <div class="d-flex justify-content-center gap-3 mb-4">
-                <a href="#early-access" class="btn btn-teal btn-lg px-5">Get Early Access</a>
+                <a href="/early-access" class="btn btn-teal btn-lg px-5">Get Early Access</a>
                 <a href="#demo" class="btn btn-outline-darkblue btn-lg px-5">Watch Demo</a>
             </div>
         </div>
@@ -193,7 +197,7 @@
                             <li>Up to 3 agents</li>
                             <li>Email support</li>
                         </ul>
-                        <a href="#early-access" class="btn btn-teal px-4">Get Started</a>
+                        <a href="/billing" class="btn btn-teal px-4">Get Started</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
