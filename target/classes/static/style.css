@@ -1,0 +1,12 @@
+/* Custom styles for OmniAgent landing page */
+.text-teal { color: #1de9b6 !important; }
+.border-teal { border-color: #1de9b6 !important; }
+.btn-teal:hover, .btn-teal:focus { background: #0f4c81; color: #fff; }
+.btn-outline-darkblue:hover, .btn-outline-darkblue:focus { background: #0f4c81; color: #fff; border-color: #0f4c81; }
+.card { transition: box-shadow 0.2s; }
+.card:hover { box-shadow: 0 8px 32px rgba(15,76,129,0.12); }
+@media (max-width: 768px) {
+    .hero { padding: 48px 0 32px; border-radius: 0 0 24px 24px; }
+    .section-title { font-size: 1.5rem; }
+    .icon { font-size: 2rem; }
+}
