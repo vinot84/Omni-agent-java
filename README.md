@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Omni-agent-java
 =======
 # OmniAgent Landing Page
 =======
->>>>>>> a1cc353 (Add CI/CD workflow and polish README for public enterprise deployment)
-
 # OmniAgent Enterprise Landing Page
-
-[![CI/CD](https://github.com/omniagent/omniagent-landing/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/omniagent/omniagent-landing/actions/workflows/ci-cd.yml)
 
 >A modern, enterprise SaaS Spring Boot landing page for OmniAgent — an AI-powered platform offering domain-specific intelligent agents for every department.
 
@@ -55,4 +49,3 @@ Automated build, test, and artifact upload via GitHub Actions. See `.github/work
 
 ---
 © 2025 OmniAgent. All rights reserved.
->>>>>>> c21cb19 (Initial public enterprise SaaS landing page for OmniAgent)
