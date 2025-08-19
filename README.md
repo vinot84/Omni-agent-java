@@ -6,23 +6,20 @@
 =======
 >>>>>>> a1cc353 (Add CI/CD workflow and polish README for public enterprise deployment)
 
+
 # OmniAgent Enterprise Landing Page
 
 [![CI/CD](https://github.com/omniagent/omniagent-landing/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/omniagent/omniagent-landing/actions/workflows/ci-cd.yml)
 
 >A modern, enterprise SaaS Spring Boot landing page for OmniAgent — an AI-powered platform offering domain-specific intelligent agents for every department.
 
-## Features
-- Futuristic, clean enterprise SaaS look
-- Hero section with headline, subheadline, and CTAs
-- "How it Works" steps
-- List of AI Agent Types with icons
-- Market Opportunity statistics
-- Customer Testimonials
-- Pricing Plans (per agent per month)
-- Footer with contact and social links
-- Responsive and SEO-optimized
-- Ready for public deployment
+## Latest Features
+- Modern ecommerce-inspired color theme (dark blue, sky blue, white)
+- Intuitive navigation bar and vibrant buttons
+- Dedicated demo page with real AI video integration (`/demo`)
+- "Watch Demo" button and nav link open the demo page
+- Responsive, accessible, and visually engaging layout
+- All changes tracked and pushed to GitHub main branch
 
 ## Tech Stack
 - Java 17
@@ -38,6 +35,9 @@
    ```
 2. Visit [http://localhost:8080](http://localhost:8080)
 
+## Demo Video
+- Visit [http://localhost:8080/demo](http://localhost:8080/demo) to watch the AI demo video.
+
 ## CI/CD
 Automated build, test, and artifact upload via GitHub Actions. See `.github/workflows/ci-cd.yml`.
 
@@ -46,7 +46,7 @@ Automated build, test, and artifact upload via GitHub Actions. See `.github/work
 - Add your cloud or Docker deployment steps in the CI/CD workflow
 
 ## Customization
-- Update content in `src/main/resources/templates/index.html`
+- Update content in `src/main/resources/templates/index.html` and `demo.html`
 - Add styles in `src/main/resources/static/style.css`
 
 ## Contact
