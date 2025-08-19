@@ -1,21 +1,22 @@
 
-/* Enterprise SaaS style for OmniAgent landing page */
-.text-teal { color: #1de9b6 !important; }
-.border-teal { border-color: #1de9b6 !important; }
-.btn-teal {
-    background: linear-gradient(90deg, #1de9b6 60%, #0f4c81 100%);
+
+/* Enterprise White & Blue Theme */
+.text-blue { color: #0f4c81 !important; }
+.bg-white { background: #fff !important; }
+.btn-blue {
+    background: #0f4c81;
     color: #fff;
     border-radius: 30px;
     font-weight: 600;
     box-shadow: 0 2px 8px rgba(15,76,129,0.08);
     transition: background 0.2s, box-shadow 0.2s;
 }
-.btn-teal:hover, .btn-teal:focus {
-    background: #0f4c81;
+.btn-blue:hover, .btn-blue:focus {
+    background: #1565c0;
     color: #fff;
     box-shadow: 0 4px 16px rgba(15,76,129,0.15);
 }
-.btn-outline-darkblue {
+.btn-outline-blue {
     border: 2px solid #0f4c81;
     color: #0f4c81;
     border-radius: 30px;
@@ -23,7 +24,7 @@
     background: #fff;
     transition: background 0.2s, color 0.2s;
 }
-.btn-outline-darkblue:hover, .btn-outline-darkblue:focus {
+.btn-outline-blue:hover, .btn-outline-blue:focus {
     background: #0f4c81;
     color: #fff;
     border-color: #0f4c81;
@@ -45,11 +46,6 @@
     font-size: 2.5rem;
     color: #0f4c81;
     margin-bottom: 12px;
-    background: linear-gradient(135deg, #1de9b6 0%, #0f4c81 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
 }
 .section-title {
     font-size: 2.2rem;
@@ -66,7 +62,7 @@
     box-shadow: 0 -2px 16px rgba(15,76,129,0.08);
 }
 .footer a {
-    color: #1de9b6;
+    color: #1565c0;
     margin-right: 16px;
     transition: color 0.2s;
 }
