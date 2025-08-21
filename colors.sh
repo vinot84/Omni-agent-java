@@ -1,6 +1,6 @@
 #!/bin/sh
 # Safe colors.sh for Render (no tput)
-# Usage: echo "$GREEN Text $RESET"
+#
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
